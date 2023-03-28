@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Work Experience</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@200;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+        integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./style.css">
+    <style>
+        html {
+            font-family: 'Source Code Pro', monospace;
+            background-color: rgba(84, 170, 228, 0.219);
+        }
+
+        .content {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            height: 50vh;
+        }
+
+        body>* {
+            margin: 8px;
+        }
+
+        hr {
+            border: 1px blue dashed;
+        }
+
+        @media all and (max-width: 800px) {
+            .nav {
+                justify-content: space-around;
+            }
+
+            @media all and (max-width: 600px) {
+                .nav {
+                    flex-flow: column wrap;
+                    padding: 0;
+                }
+
+                .nav a {
+                    text-align: center;
+                    padding: 10px;
+                    border-bottom: 1px black dashed;
+                    margin: 0px;
+                }
+
+                a:nth-child(4) {
+                    border-bottom: none;
+                    margin-bottom: 0px;
+                }
+
+                table {
+                    width: 90vw;
+                }
+
+                @media all and (max-width: 500px) {
+                    h1 {
+                        font-size: 24px;
+                        margin: 8px;
+                    }
+
+                    h3 {
+                        margin: 0px;
+                        padding-left: 4px;
+                    }
+
+                    .Mid>p {
+                        font-size: 16px;
+                    }
+
+                    .Top {
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                    }
+
+                    .Top>hr {
+                        width: 100%;
+                    }
+
+                    table {
+                        width: 90vw;
+
+                    }
+
+                    th,
+                    td {
+                        font-size: 16px;
+                    }
+
+                    form {
+                        font-size: 16px;
+                        width: 90vw;
+                    }
+
+                    #eiei {
+                        width: 40%;
+                    }
+
+                    #eiei2 {
+                        width: 40%;
+                    }
+
+                    .content {
+                       
+                        justify-content: flex-end;
+                    }
+
+                    img {
+                        height: 150px;
+                        width: 200px;
+                        margin: auto;
+                    }
+                    
+
+                }
+
+            }
+
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="nav">
+        <a href="/index.html"><i class="fa-solid fa-house"></i> Home </a>
+        <a href="./education.html"><i class="fa-solid fa-school"></i> Education </a>
+        <a href="#"><i class="fa-solid fa-briefcase"></i> Work Experience </a>
+        <a href="./contact.html"><i class="fa-solid fa-address-book"></i> Contact Me </a>
+    </nav>
+    <hr>
+    <div class="content">
+        <h2>Work Experience</h2>
+        <img src="https://www.svgrepo.com/show/466974/work.svg" style="width: 100px; height: 100px;" alt="">
+        <table>
+            <tr>
+                <th>Year</th>
+                <th>Job Title</th>
+                <th>Company</th>
+            </tr>
+            <tr>
+                <td>2021</td>
+                <td>Planner Engineering</td>
+                <td>SIAMKUBOTA COOPERATION.</td>
+            </tr>
+            <tr>
+                <td>2021</td>
+                <td>Lorem ipsum dolor sit amet.</td>
+                <td>Lorem ipsum dolor sit amet.</td>
+            </tr>
+            <tr>
+                <td>2021</td>
+                <td>Lorem ipsum dolor sit amet.</td>
+                <td>Lorem ipsum dolor sit amet.</td>
+            </tr>
+        </table>
+    </div>
+</body>
+
+</html>

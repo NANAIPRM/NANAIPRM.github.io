@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@200;400&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+        integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./style.css">
+    <style>
+        html {
+            font-family: 'Source Code Pro', monospace;
+            background-color: rgba(84, 170, 228, 0.219);
+        }
+
+        p {
+            font-size: 20px;
+        }
+
+        .Top,
+        .Top>* {
+            color: black;
+            margin: 8px;
+        }
+
+        .Mid,
+        .Mid>* {
+            color: black;
+            margin: 8px;
+        }
+
+        .Bot,
+        .Bot>* {
+            color: black;
+            margin: 8px;
+        }
+
+        img {
+            /* border: black solid 3px; */
+            border-radius: 50%;
+        }
+
+        hr {
+            border: 1px blue dashed;
+        }
+
+
+        .fa-brands {
+            color: green;
+        }
+
+        #location {
+            color: red;
+        }
+
+        #email {
+            color: blue;
+        }
+
+        .nav a:hover {
+            background-color: rgba(20, 124, 124, 0.527);
+            padding: 5px;
+            border-radius: 5px;
+        }
+
+        .title-box {
+            border: black 3px solid;
+            border-radius: 5px;
+            background-image: url(https://cdn.pixabay.com/photo/2017/05/20/20/22/clouds-2329680_960_720.jpg);
+            background-position: center center;
+            /* background-position: -10px -70px; */
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-blend-mode: darken;
+            background-color: rgba(183, 241, 245, 0.966);
+            height: 15vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            margin: 8px;
+        }
+
+        .title-box>* {
+            color: rgb(255, 253, 253);
+
+        }
+
+        li {
+            font-size: 20px;
+        }
+
+        h3 {
+            margin: 0px;
+            padding-left: 8px;
+        }
+        @media all and (max-width: 800px) {
+    .nav {
+        justify-content: space-around;
+    }
+
+    @media all and (max-width: 600px) {
+        .nav {
+            flex-flow: column wrap;
+            padding: 0;
+        }
+
+        .nav a {
+            text-align: center;
+            padding: 10px;
+            border-bottom: 1px black dashed;
+            margin: 0px;
+        }
+
+        a:nth-child(4) {
+            border-bottom: none;
+            margin-bottom: 0px;
+        }
+        table{
+            width: 90vw;
+        }
+
+        @media all and (max-width: 500px) {
+            h1 {
+                font-size: 24px;
+                margin: 8px;
+                text-align: center;
+            }
+
+            h3 {
+                margin: 0px;
+                padding-left: 4px;
+                text-align: center;
+            }
+
+            .Mid>p {
+                font-size: 16px;
+            }
+
+            .Top {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .Top>hr {
+                width: 100%;
+            }
+            table{
+                width: 90vw;
+                
+            }
+            th,td{
+                font-size: 16px;
+            }
+            form{
+                font-size: 16px;
+                width: 90vw;
+            }
+            #eiei {
+                width: 40%;
+            }
+    
+            #eiei2 {
+                width: 40%;
+            }
+        }
+
+    }
+
+}
+
+    </style>
+</head>
+
+<body>
+    <nav class="nav">
+        <a href="#"><i class="fa-solid fa-house"></i> Home </a>
+        <a href="./education.html"><i class="fa-solid fa-school"></i> Education </a>
+        <a href="./work.html"><i class="fa-solid fa-briefcase"></i> Work Experience </a>
+        <a href="./contact.html"><i class="fa-solid fa-address-book"></i> Contact Me </a>
+    </nav>
+
+    <div class="Top">
+        <hr>
+        <div class="title-box">
+            <h1>&nbsp;Porramat Chairattanah</h1>
+            <h3> &nbsp;Full-Stack Developer</h3>
+        </div>
+        <br>
+        <img src="./Profile.jpg" alt="" width="200px" height="200px">
+        <p>console.log(`Hello World`)</p>
+        <hr>
+    </div>
+
+    <div class="Mid">
+        <h3>Personal Info</h3>
+        <p> <strong><i id="location" class="fa-solid fa-location-dot fa-bounce"></i> Location</strong>: Bkk, Thailand
+        </p>
+        <p> <strong><i id="phone" class="fa-solid fa-phone fa-bounce"></i> Phone</strong>: 098-824-3639</p>
+        <p> <strong><i id="email" class="fa-solid fa-envelope fa-bounce"></i> E-mail</strong>: porramat.cha@gmail.com
+        </p>
+        <p> <strong><i class="fa-brands fa-line fa-bounce"></i> Line ID</strong>: nainaiprm</p>
+    </div>
+
+    <div class="Bot">
+        <hr>
+        <h3>Skills</h3>
+        <ul>
+            <li>UX/UI Design (Figma)</li>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+            <li>Git</li>
+            <li>React.js</li>
+            <li>Node.js</li>
+            <li>MySQL</li>
+        </ul>
+    </div>
+    <a href="https://www.google.com">Google</a>
+
+</body>
+
+</html>
